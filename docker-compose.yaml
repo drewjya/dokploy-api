@@ -1,0 +1,12 @@
+services:
+  api:
+    container_name: dokploy-api
+    image: dokploy-api
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${PORT}"
+      
+      
+  
